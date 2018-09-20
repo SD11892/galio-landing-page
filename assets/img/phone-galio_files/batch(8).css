@@ -1,0 +1,359 @@
+/* module-key = 'com.atlassian.auiplugin:aui-toggle', location = 'src/less/aui-toggle.less' */
+aui-toggle{box-sizing:border-box;cursor:pointer;display:inline-block;font-size:12px;height:2.16666667em;padding:6px 8px;position:relative;vertical-align:baseline;width:58px}aui-toggle::before{content:"\00a0"}aui-toggle::after{background-color:transparent;border-radius:3.01px;bottom:0;content:'';left:0;pointer-events:none;position:absolute;right:0;top:0}.aui-toggle-input{-webkit-appearance:button;-moz-appearance:radio-container;border-radius:3.01px;bottom:0;cursor:pointer;height:100%;left:0;margin:0;padding:0;position:absolute;right:0;top:0;width:100%}.aui-toggle-view{background-color:#ccc;border-radius:3.01px;bottom:0;box-sizing:border-box;display:block;left:0;pointer-events:none;position:absolute;right:0;transition:background-color 100ms linear;top:0}.aui-toggle-view::after{background-color:#f5f5f5;border-radius:3.01px;bottom:1px;content:'';display:block;left:1px;position:absolute;top:1px;-webkit-transition:-webkit-transform 150ms ease-in-out;transition:transform 150ms ease-in-out;width:24px}.aui-toggle-tick,.aui-toggle-cross{position:absolute;top:5px}.aui-toggle-tick::before,.aui-toggle-cross::before{left:50%;-ms-transform:translateX(-50%);-webkit-transform:translateX(-50%);transform:translateX(-50%);transition:opacity 250ms ease-in-out}.aui-toggle-tick{color:#fff;left:8px}.aui-toggle-cross{color:#707070;right:8px}.aui-toggle-input:checked+.aui-toggle-view,.aui-toggle-input.indeterminate-checked+.aui-toggle-view{background-color:#1d8831}.aui-toggle-input:checked+.aui-toggle-view::after,.aui-toggle-input.indeterminate-checked+.aui-toggle-view::after{-ms-transform:translateX(32px);-webkit-transform:translateX(32px);transform:translateX(32px)}aui-toggle:not([disabled]):not([busy]):hover .aui-toggle-view::after,aui-toggle:not([disabled]):not([busy]) .aui-toggle-input:focus+.aui-toggle-view::after{background-color:#e9e9e9}aui-toggle[disabled],aui-toggle[busy]{cursor:auto}aui-toggle[disabled] .aui-toggle-input,aui-toggle[busy] .aui-toggle-input{cursor:auto;pointer-events:none}aui-toggle[disabled]::after,aui-toggle[busy]::after{background-color:rgba(255,255,255,0.5)}aui-toggle[busy] .aui-toggle-tick::before,aui-toggle[busy] .aui-toggle-cross::before{opacity:0;transition:auto}
+/* module-key = 'com.pyxis.greenhopper.jira:gh-rapid-config', location = 'includes/css/colorpicker2/colorpicker.css' */
+.colorpicker {
+    width: 356px;
+    height: 176px;
+    overflow: hidden;
+    position: absolute;
+    background: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_background.png);
+    display: none;
+}
+
+.colorpicker_color {
+    width: 150px;
+    height: 150px;
+    left: 14px;
+    top: 13px;
+    position: absolute;
+    background: #f00;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.colorpicker_color div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_overlay.png);
+}
+
+.colorpicker_color div div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    overflow: hidden;
+    background: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_select.gif);
+    margin: -5px 0 0 -5px;
+}
+
+.colorpicker_hue {
+    position: absolute;
+    top: 13px;
+    left: 171px;
+    width: 35px;
+    height: 150px;
+    cursor: n-resize;
+}
+
+.colorpicker_hue div {
+    position: absolute;
+    width: 35px;
+    height: 9px;
+    overflow: hidden;
+    background: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_indic.gif) left top;
+    margin: -4px 0 0 0;
+    left: 0;
+}
+
+.colorpicker_new_color {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 213px;
+    top: 13px;
+    background: #f00;
+}
+
+.colorpicker_current_color {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 283px;
+    top: 13px;
+    background: #f00;
+}
+
+.colorpicker input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    position: absolute;
+    font-size: 9px;
+    color: #000;
+    top: 4px;
+    right: 11px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    height: 11px;
+}
+
+.colorpicker_hex {
+    position: absolute;
+    width: 72px;
+    height: 22px;
+    background: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_hex.png) top;
+    left: 212px;
+    top: 142px;
+}
+
+.colorpicker_hex input {
+    right: 6px;
+}
+
+.colorpicker_field {
+    height: 22px;
+    width: 62px;
+    background-position: top;
+    position: absolute;
+}
+
+.colorpicker_field span {
+    position: absolute;
+    width: 12px;
+    height: 22px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    cursor: n-resize;
+}
+
+.colorpicker_rgb_r {
+    background-image: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_rgb_r.png);
+    top: 52px;
+    left: 212px;
+}
+
+.colorpicker_rgb_g {
+    background-image: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_rgb_g.png);
+    top: 82px;
+    left: 212px;
+}
+
+.colorpicker_rgb_b {
+    background-image: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_rgb_b.png);
+    top: 112px;
+    left: 212px;
+}
+
+.colorpicker_hsb_h {
+    background-image: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_hsb_h.png);
+    top: 52px;
+    left: 282px;
+}
+
+.colorpicker_hsb_s {
+    background-image: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_hsb_s.png);
+    top: 82px;
+    left: 282px;
+}
+
+.colorpicker_hsb_b {
+    background-image: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_hsb_b.png);
+    top: 112px;
+    left: 282px;
+}
+
+.colorpicker_submit {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/images/colorpicker2/colorpicker_submit.png) top;
+    left: 322px;
+    top: 142px;
+    overflow: hidden;
+}
+
+.colorpicker_focus {
+    background-position: center;
+}
+
+.colorpicker_hex.colorpicker_focus {
+    background-position: bottom;
+}
+
+.colorpicker_submit.colorpicker_focus {
+    background-position: bottom;
+}
+
+.colorpicker_slider {
+    background-position: bottom;
+}
+
+/* module-key = 'com.pyxis.greenhopper.jira:gh-rapid-config', location = 'includes/css/lib/restfultable/restfultable.css' */
+/* ----- table loading styles ----- */
+.aui-restfultable-init {
+    text-align: center;
+    vertical-align: center;
+}
+
+.aui-restfultable-init .aui-restfultable-throbber {
+    background: url("//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/wait.gif") center center no-repeat;
+    width: 20px;
+    height: 16px;
+    display: inline-block;
+}
+
+.aui-restfultable-init .aui-restfultable-loading {
+    top: -4px;
+    position: relative;
+}
+
+.aui-restfultable .aui-restfultable-row.loading .aui-restfultable-throbber {
+    background-image: url("//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/wait.gif");
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+
+table.aui.aui-restfultable > thead > tr > th {
+    background-color: #fff;
+}
+
+/* ----- Generic row - All states ----- */
+.aui-restfultable-row td {
+    vertical-align: top;
+}
+
+.aui-restfultable-row .aui-restfultable-order {
+    width: 8px;
+}
+
+.aui-restfultable-row .aui-restfultable-operations {
+    width: 160px;
+    white-space: nowrap;
+}
+
+.aui-restfultable-row .aui-restfultable-throbber {
+    width: 20px;
+}
+
+.aui-restfultable-row .aui-restfultable-operations input.button,
+.aui-restfultable .aui-restfultable-row select {
+    margin-top: 2px;
+}
+
+.aui-restfultable .aui-restfultable-row input.text,
+.aui-restfultable .aui-restfultable-row select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+}
+
+.aui-restfultable .aui-restfultable-order {
+    width: 8px;
+}
+
+.aui-restfultable .aui-restfultable-row .aui-restfultable-draghandle {
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    min-height: 24px;
+    margin-bottom: -6px;
+    background-image: url("//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/experimentalimages/bg-grippy.png");
+    cursor: move;
+}
+
+/* ----- Create row ----- */
+.aui-restfultable-create td {
+    border: solid #bbb;
+    border-width: 1px 0;
+}
+
+.aui-restfultable .aui-restfultable-create .aui-restfultable-draghandle {
+    display: none;
+}
+
+/* ----- Focused row ----- */
+.aui-restfultable-row.aui-restfultable-focused td {
+    background-color: #ebf1fd;
+}
+
+/* ----- Disabled row ----- */
+.aui-restfultable-row.aui-resfultable-disabled td {
+    opacity: 0.5;
+}
+
+/* ----- Readonly row ----- */
+.aui-restfultable-readonly.aui-restfultable-movable td {
+    background-color: #f0f0f0 !important;
+}
+
+.aui-restfultable-readonly .aui-restfultable-editable-no-value .aui-restfultable-editable {
+    visibility: hidden;
+}
+
+.aui-restfultable-readonly .aui-restfultable-operations a {
+    visibility: hidden;
+}
+
+.aui-restfultable-readonly .aui-restfultable-operations a {
+    visibility: visible;
+}
+
+.aui-restfultable-readonly .aui-restfultable-editable {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    height: 1%;
+    padding: 3px 24px 2px 4px;
+    position: relative;
+}
+
+.aui-restfultable-readonly .aui-restfultable-editable .icon-edit-sml {
+    margin: 0;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    visibility: hidden;
+    background: url("//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/1001.0.0-SNAPSHOT/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-config/experimentalimages/aui-icon-edit.png") 0 0 no-repeat;
+}
+
+.aui-restfultable-allowhover td .aui-restfultable-editable .icon-edit-sml {
+    visibility: hidden;
+}
+
+.aui-restfultable-allowhover .aui-restfultable-readonly td:hover .aui-restfultable-editable .icon-edit-sml {
+    visibility: visible;
+}
+
+.aui-restfultable-readonly .aui-restfultable-editable em {
+    color: #979797;
+}
+
+/* ----- Hover row ----- */
+.aui-restfultable-row.aui-restfultable-active {
+    background-color: #f0f0f0;
+}
+
+.aui-restfultable-allowhover tr:hover td {
+    background-color: #f0f0f0;
+}
+
+.aui-restfultable-allowhover tr.aui-restfultable-focused td {
+    background-color: #ebf1fd;
+}
+
+.aui-restfultable-allowhover td:hover .aui-restfultable-editable {
+    visibility: visible;
+    background: #fdfcd1;
+    cursor: pointer;
+}
+
+.aui-resfultable-delete {
+    color: #036;
+}
+/* module-key = 'com.atlassian.jira.plugins.jira-development-integration-plugin:devstatus-dialog-all-resources', location = 'css/viewissue/devstatus-detail-dialog.less' */
+.jira-dialog .devstatus-dialog-content .devstatus-detail-table .ellipsis,.jira-dialog .devstatus-dialog-content .builds-header .ellipsis{display:inline-block;width:100%}html:not(.msie-8):not(.msie-9) .jira-dialog .devstatus-dialog-content .devstatus-detail-table .ellipsis,html:not(.msie-8):not(.msie-9) .jira-dialog .devstatus-dialog-content .builds-header .ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.jira-dialog .devstatus-dialog-content .builds-header{display:inline-block;width:100%}.jira-dialog .devstatus-dialog-heading.borderless{border-bottom:none}.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .author .author-avatar,.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .reviewer .author-avatar{width:24px;height:24px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:3px}.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .author .reviewer-container,.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .reviewer .reviewer-container{position:relative}.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .author .reviewer-container .vcs-user,.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .reviewer .reviewer-container .vcs-user{position:relative;display:inline-block;height:24px;width:24px}.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .author .reviewer-container .vcs-user .fade,.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .reviewer .reviewer-container .vcs-user .fade{opacity:0.5;background-color:#FFF}.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .author .reviewer-container .vcs-user .fade img,.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .reviewer .reviewer-container .vcs-user .fade img{filter:alpha(opacity=50)}.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .author .reviewer-container .approved,.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .reviewer .reviewer-container .approved{opacity:1;filter:none;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);width:12px;height:12px;color:#ffffff;background:transparent url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/4.48.0/_/download/resources/com.atlassian.jira.plugins.jira-development-integration-plugin:devstatus-dialog-all-resources/icon-approved.svg) no-repeat 0 0;background-size:12px;position:absolute;right:-6px;top:-6px;text-align:center;display:block;font-size:9px;line-height:16px;text-indent:-999em}@media \0screen{.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .author .reviewer-container .approved,.jira-dialog .devstatus-dialog-content .devstatus-detail-table tbody .reviewer .reviewer-container .approved{background:transparent url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/4.48.0/_/download/resources/com.atlassian.jira.plugins.jira-development-integration-plugin:devstatus-dialog-all-resources/icon-approved.png) no-repeat 0 0}}.jira-dialog .devstatus-dialog-content .tabs-pane{display:none}.jira-dialog .devstatus-dialog-content .tabs-pane.active-pane{display:inherit}.jira-dialog .devstatus-dialog-content .tabs-pane.loading{opacity:0.5;filter:alpha(opacity=50)}.jira-dialog .devstatus-dialog-content .tabs-pane .status-loading{position:absolute;left:50%;top:50%}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container>.aui-message-warning{margin-top:-10px;margin-bottom:10px}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .no-permission-to-view-all{font-style:italic}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .no-permission-to-view-all:first-child{font-style:normal;margin-top:100px;text-align:center}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .no-permission-to-view-all:first-child .lock-image{background:transparent url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/4.48.0/_/download/resources/com.atlassian.jira.plugins.jira-development-integration-plugin:devstatus-dialog-all-resources/authentication_problems.png) no-repeat 50% 0;height:96px;padding-bottom:10px}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .no-permission-to-view-all:not(:first-child){margin-top:20px}html:not(.msie-8):not(.msie-9) .jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .connection-error .instance{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;display:inline-block;vertical-align:bottom}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .connection-problem{margin:20px 0;padding:40px 60px;max-width:800px}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem>h2,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .connection-problem>h2,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem>p,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .connection-problem>p,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem>.image,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .connection-problem>.image{width:100%;margin:10px 0}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem>h2,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .connection-problem>h2,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem>p,.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .connection-problem>p{text-align:center}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem>.image{background:transparent url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/4.48.0/_/download/resources/com.atlassian.jira.plugins.jira-development-integration-plugin:devstatus-dialog-all-resources/authentication_problems.png) no-repeat 50% 0;height:96px}html:not(.msie-8):not(.msie-9) .jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem .instances .instance{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;display:inline-block;vertical-align:bottom}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .authentication-problem .aui-message-warning{margin-top:40px}.jira-dialog .devstatus-dialog-content .tabs-pane .detail-content-container .connection-problem>.image{background:transparent url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/4.48.0/_/download/resources/com.atlassian.jira.plugins.jira-development-integration-plugin:devstatus-dialog-all-resources/connection_problems.png) no-repeat 50% 0;height:96px}.jira-dialog .devstatus-dialog-content .tabs-menu{background-color:#f0f0f0}.jira-dialog .devstatus-dialog-content .tabs-menu .devstatus-tab-count{margin-left:5px}.jira-dialog .jira-dialog-content .buttons-container.form-footer{overflow:visible;min-height:51px;height:100%}.jira-dialog .jira-dialog-content .buttons-container.form-footer .oauth-status{padding:5px 10px;position:static;text-align:left;white-space:normal}html:not(.msie-8):not(.msie-9) .jira-dialog .jira-dialog-content .buttons-container.form-footer .oauth-status .instance{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px;display:inline-block;vertical-align:bottom}#inline-dialog-instance-list-popup{z-index:9999}#inline-dialog-instance-list-popup .contents{max-width:170px;padding:10px}#inline-dialog-instance-list-popup .contents ul{padding-left:10px}#inline-dialog-instance-list-popup .contents ul li.instance-in-popup{list-style-type:none}html:not(.msie-8):not(.msie-9) #inline-dialog-instance-list-popup .contents ul li.instance-in-popup .instance{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px;display:inline-block;vertical-align:bottom}.detail-builds-container+.detail-builds-container{padding-top:20px}.detail-builds-container .builds-header h2{line-height:normal}.detail-builds-container .builds-table thead .plan,.detail-builds-container .builds-table tbody .plan{max-width:280px}.detail-builds-container .builds-table thead .build,.detail-builds-container .builds-table tbody .build{min-width:100px}.detail-builds-container .builds-table thead .result,.detail-builds-container .builds-table tbody .result{min-width:240px}.detail-builds-container .builds-table thead .timestamp,.detail-builds-container .builds-table tbody .timestamp{text-align:right;min-width:140px}.detail-builds-container .builds-table thead .actions,.detail-builds-container .builds-table tbody .actions{text-align:right;min-width:100px}.detail-builds-container .builds-table tbody>tr.merge{border-bottom:none}.detail-builds-container .builds-table tbody>tr.artifacts td{padding:0 10px}.detail-builds-container .builds-table tbody .plan .aui-lozenge{margin-left:5px}.detail-builds-container .builds-table tbody .plan>div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.detail-builds-container .builds-table tbody .build-artifacts-table table.aui{margin:7px 0;table-layout:fixed}.detail-builds-container .builds-table tbody .build-artifacts-table table.aui>tbody>tr,.detail-builds-container .builds-table tbody .build-artifacts-table table.aui>tbody>tr:first-child>td{border:none}.detail-builds-container .builds-table tbody .build-artifacts-table table.aui>tbody>tr>td{padding:0 10px;text-align:center}.detail-deployments-container+.detail-deployments-container{padding-top:20px}.detail-deployments-container .deployments-header{margin-bottom:10px}.detail-deployments-container .deployments-header h2{line-height:normal}.detail-deployments-container .deployments-header .ellipsis{width:100%}html:not(.msie-8):not(.msie-9) .detail-deployments-container .deployments-header .ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.detail-deployments-container .deployments-table thead .environment,.detail-deployments-container .deployments-table tbody .environment{min-width:340px;max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.detail-deployments-container .deployments-table thead .status,.detail-deployments-container .deployments-table tbody .status{min-width:100px}.detail-deployments-container .deployments-table thead .release,.detail-deployments-container .deployments-table tbody .release{min-width:300px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.detail-deployments-container .deployments-table thead .timestamp,.detail-deployments-container .deployments-table tbody .timestamp{min-width:140px;text-align:right}.detail-commits-container+.detail-commits-container{padding-top:20px}.detail-commits-container .repository-header .project-avatar{display:inline-block;vertical-align:middle}.detail-commits-container .repository-header .project-avatar .fusion-avatar-project{background-color:#fff !important;box-shadow:0 0 0 1px #ccc !important;border-radius:100% !important}.detail-commits-container .repository-header .project-avatar .fusion-avatar-project img{border-radius:100% !important}.detail-commits-container .repository-header .project-avatar .fusion-avatar-project:before{border-radius:100% !important;border:1px solid #ccc !important}.detail-commits-container .repository-header .project-avatar .default-avatar-project .aui-avatar-inner:before{font-size:24px;margin-top:-13px}.detail-commits-container .repository-header .project-avatar .aui-avatar .aui-avatar-inner img{height:24px;width:24px}.detail-commits-container .repository-header .fork-off{margin-left:10px}.detail-commits-container .repository-header .project-info{display:inline-block;vertical-align:middle;padding-left:10px}.detail-commits-container .repository-header .aui-item{vertical-align:middle}.detail-commits-container .repository-header-group .project-space{width:80%}.detail-commits-container .repository-header-group .project-space div{display:inline-block}.detail-commits-container .repository-header-group .project-space .project-avatar{vertical-align:text-bottom}.detail-commits-container .repository-header-group .project-space .project-info{max-width:60%}html:not(.msie-8):not(.msie-9) .detail-commits-container .repository-header-group .project-space .project-info{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%;display:inline-block;vertical-align:bottom}.detail-commits-container .repository-header-group .project-space .project-info .repository-link{font-size:20px}.detail-commits-container .repository-header-group .project-space .extra-project-info{max-width:35%;vertical-align:middle}html:not(.msie-8):not(.msie-9) .detail-commits-container .repository-header-group .project-space .extra-project-info{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:35%;display:inline-block;vertical-align:baseline}.detail-commits-container .repository-header-group .project-space .extra-project-info .repository-instance{display:inline;margin-left:10px}.detail-commits-container .commits-table{padding-left:24px}.detail-commits-container .commits-table table>tbody>tr.merge td>*{opacity:0.35;filter:alpha(opacity=35)}.detail-commits-container .commits-table table>tbody>tr>td{vertical-align:middle}.detail-commits-container .commits-table thead .commitrow td:last-child,.detail-commits-container .commits-table tbody .commitrow td:last-child,.detail-commits-container .commits-table thead th:last-child,.detail-commits-container .commits-table tbody th:last-child{text-align:right}.detail-commits-container .commits-table thead .changeset{min-width:80px}.detail-commits-container .commits-table thead .branches{min-width:37px}.detail-commits-container .commits-table thead .timestamp{min-width:100px}.detail-commits-container .commits-table thead .filecount{min-width:50px}.detail-commits-container .commits-table tbody{border-bottom:1px solid #CCC}.detail-commits-container .commits-table tbody .changeset .merge{margin-left:5px;padding:2px 3px;font-size:10px;vertical-align:text-bottom}.detail-commits-container .commits-table tbody .message{max-width:450px;width:100%}.detail-commits-container .commits-table tbody .message>span{vertical-align:middle}.has-reviews.detail-commits-container .commits-table tbody .message,.has-branches.detail-commits-container .commits-table tbody .message{max-width:400px}.has-reviews.has-branches.has-files.detail-commits-container .commits-table tbody .message{max-width:350px}.has-reviews.has-branches.has-files.has-actions.detail-commits-container .commits-table tbody .message{max-width:250px}.detail-commits-container .commits-table tbody .branches{white-space:nowrap}.detail-commits-container .commits-table tbody .branches .ref-lozenge{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;max-width:100%;background-color:#f5f5f5;font-size:13px;font-weight:normal;text-transform:none;border:1px solid #cccccc;padding:3px 5px;margin:0 3px 3px;vertical-align:middle;line-height:16px;text-align:left}.detail-commits-container .commits-table tbody .reviews{white-space:nowrap}.detail-commits-container .commits-table tbody .filecount a{white-space:nowrap}.detail-commits-container .commits-table tbody .filerow td .file{display:table;table-layout:fixed;width:100%;box-sizing:border-box}.detail-commits-container .commits-table tbody .filerow td .file:not(:last-child){margin-bottom:5px}.detail-commits-container .commits-table tbody .filerow td .file .change,.detail-commits-container .commits-table tbody .filerow td .file .filename{display:table-cell}.detail-commits-container .commits-table tbody .filerow td .file .change{padding-right:10px;width:95px;vertical-align:middle}.detail-commits-container .commits-table tbody .filerow td .file .lines .count{width:34px}.detail-commits-container .commits-table tbody .filerow td .file .lines .added{border-color:#cfc;background-color:#cfc;color:#399839}.detail-commits-container .commits-table tbody .filerow td .file .lines .added.count{margin-right:3px}.detail-commits-container .commits-table tbody .filerow td .file .lines .removed{border-color:#fdd;background-color:#fdd;color:#c33}.detail-commits-container .commits-table tbody .filerow td .file .lines :not(.count),.detail-commits-container .commits-table tbody .filerow td .file .changetype span{width:82px}.detail-commits-container .commits-table tbody .commit-actions a{white-space:nowrap}.detail-commits-container .commits-table tbody .commit-actions>div{display:inline-block}.detail-commits-container .commits-table tbody>tr.commitrow,.detail-commits-container .commits-table tbody>tr.filerow{border-bottom:0}.detail-commits-container .commits-table tbody>tr.commitrow{border-top:1px solid #CCC}.branch-tooltip{text-align:left}.branch-tooltip .branch-name-tooltip{text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.detail-pullrequests-container .pullrequests-table thead>tr>.state,.detail-pullrequests-container .pullrequests-table tbody>tr>.state{width:50px}.detail-pullrequests-container .pullrequests-table thead>tr>.author,.detail-pullrequests-container .pullrequests-table tbody>tr>.author{width:60px}.detail-pullrequests-container .pullrequests-table thead>tr>.comment,.detail-pullrequests-container .pullrequests-table tbody>tr>.comment{text-align:right;padding-right:0px}.detail-pullrequests-container .pullrequests-table thead>tr>.last-updated,.detail-pullrequests-container .pullrequests-table tbody>tr>.last-updated{width:140px;text-align:right;white-space:nowrap}.detail-pullrequests-container .pullrequests-table tbody tr>td{vertical-align:middle}.detail-pullrequests-container .pullrequests-table tbody .title .pullrequest-link{max-width:480px;vertical-align:middle}.detail-pullrequests-container .pullrequests-table tbody .lozenge{width:100px;max-width:100px}.detail-pullrequests-container .pullrequests-table tbody .lozenge .ellipsis{display:inline}.detail-pullrequests-container .pullrequests-table tbody .reviewer{width:90px;max-width:90px}.detail-pullrequests-container .pullrequests-table tbody .reviewer .reviewer-container{white-space:nowrap}.detail-pullrequests-container .pullrequests-table tbody .reviewer .reviewer-container span+span{margin-left:10px}.detail-pullrequests-container .pullrequests-table tbody .comment .comment-container .comment-link .aui-icon{vertical-align:middle}.detail-pullrequests-container .pullrequests-table tbody .comment .comment-container .count{font-size:smaller;vertical-align:text-top;padding-left:2px}.detail-reviews-container table>tbody>tr>td{vertical-align:middle}.detail-reviews-container .review{white-space:nowrap}.detail-reviews-container .title{width:100%;max-width:340px}.detail-reviews-container .title span{vertical-align:middle}.detail-reviews-container .state{white-space:nowrap}.detail-reviews-container .timestamp{text-align:right;white-space:nowrap}.detail-reviews-container .reviewer{width:90px;max-width:90px}.detail-reviews-container .reviewer .reviewer-container{white-space:nowrap}.detail-reviews-container .reviewer .reviewer-container span+span{margin-left:10px}.detail-reviews-container .comment .comment-container .comment-link .aui-icon{vertical-align:middle}.detail-reviews-container .comment .comment-container .count{font-size:smaller;vertical-align:text-top;padding-left:2px}.detail-branches-container .branches-table thead>tr>.repository,.detail-branches-container .branches-table tbody>tr>.repository{width:200px;padding-right:0px}.detail-branches-container .branches-table thead>tr>.pullrequest,.detail-branches-container .branches-table tbody>tr>.pullrequest,.detail-branches-container .branches-table thead>tr>.review,.detail-branches-container .branches-table tbody>tr>.review{width:100px;white-space:nowrap}.detail-branches-container .branches-table thead>tr>.action,.detail-branches-container .branches-table tbody>tr>.action{width:10%;text-align:right;white-space:nowrap}.detail-branches-container .branches-table tbody tr>td{vertical-align:middle}.detail-branches-container .branches-table tbody .repository{white-space:nowrap}.detail-branches-container .branches-table tbody .repository .repository-header .project-avatar{display:inline-block;vertical-align:middle}.detail-branches-container .branches-table tbody .repository .repository-header .project-avatar .fusion-avatar-project{background-color:#fff !important;box-shadow:0 0 0 1px #ccc !important;border-radius:100% !important}.detail-branches-container .branches-table tbody .repository .repository-header .project-avatar .fusion-avatar-project img{border-radius:100% !important}.detail-branches-container .branches-table tbody .repository .repository-header .project-avatar .fusion-avatar-project:before{border-radius:100% !important;border:1px solid #ccc !important}.detail-branches-container .branches-table tbody .repository .repository-header .project-avatar .default-avatar-project .aui-avatar-inner:before{font-size:24px;margin-top:-13px}.detail-branches-container .branches-table tbody .repository .repository-header .project-avatar .aui-avatar .aui-avatar-inner img{height:24px;width:24px}.detail-branches-container .branches-table tbody .repository .repository-header .fork-off{margin-left:10px}.detail-branches-container .branches-table tbody .repository .repository-header .project-info{display:inline-block;vertical-align:middle;padding-left:10px}.detail-branches-container .branches-table tbody .repository .repository-header .aui-item{vertical-align:middle}.detail-branches-container .branches-table tbody .repository .project-info{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 24px);display:inline-block;vertical-align:middle}.detail-branches-container .branches-table tbody .branch .branch-name{white-space:nowrap;max-width:450px;vertical-align:middle}html:not(.msie-8):not(.msie-9) .detail-branches-container .branches-table tbody .branch .branch-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:450px;display:inline-block;vertical-align:middle}.detail-branches-container .branches-table tbody .branch .branch-name .branch-link{margin-left:2px}.detail-branches-container .branches-table tbody .pullrequest .pullrequest-state{margin-left:5px}.detail-branches-container .branches-table .last-updated{text-align:right}.pullrequest-dialog td{vertical-align:middle;padding:5px}html:not(.msie-8):not(.msie-9) .pullrequest-dialog td.pullrequest-name .pullrequest-link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:300px;display:inline-block;vertical-align:left}.pullrequest-dialog td.pullrequest-name a{vertical-align:middle}.pullrequest-dialog td.lozenge{max-width:100px}.reviews-dialog td{vertical-align:middle;padding:5px}.reviews-dialog td.inline-review-id a{vertical-align:middle}.reviews-dialog td.inline-review-state{max-width:100px}.extrareviewers-dialog .author .author-avatar,.extrareviewers-dialog .reviewer .author-avatar{width:24px;height:24px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:3px}.extrareviewers-dialog .author .reviewer-container,.extrareviewers-dialog .reviewer .reviewer-container{position:relative}.extrareviewers-dialog .author .reviewer-container .vcs-user,.extrareviewers-dialog .reviewer .reviewer-container .vcs-user{position:relative;display:inline-block;height:24px;width:24px}.extrareviewers-dialog .author .reviewer-container .vcs-user .fade,.extrareviewers-dialog .reviewer .reviewer-container .vcs-user .fade{opacity:0.5;background-color:#FFF}.extrareviewers-dialog .author .reviewer-container .vcs-user .fade img,.extrareviewers-dialog .reviewer .reviewer-container .vcs-user .fade img{filter:alpha(opacity=50)}.extrareviewers-dialog .author .reviewer-container .approved,.extrareviewers-dialog .reviewer .reviewer-container .approved{opacity:1;filter:none;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);width:12px;height:12px;color:#ffffff;background:transparent url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/4.48.0/_/download/resources/com.atlassian.jira.plugins.jira-development-integration-plugin:devstatus-dialog-all-resources/icon-approved.svg) no-repeat 0 0;background-size:12px;position:absolute;right:-6px;top:-6px;text-align:center;display:block;font-size:9px;line-height:16px;text-indent:-999em}@media \0screen{.extrareviewers-dialog .author .reviewer-container .approved,.extrareviewers-dialog .reviewer .reviewer-container .approved{background:transparent url(//d3svb88ihmtf6u.cloudfront.net/atl-vertigo--shard-jira-prod-eu-5--3--jres.atlassian.net/s/b55nvt/b/2/4.48.0/_/download/resources/com.atlassian.jira.plugins.jira-development-integration-plugin:devstatus-dialog-all-resources/icon-approved.png) no-repeat 0 0}}.extrareviewers-dialog td.reviewer-name{height:24px}.extrareviewers-dialog td.reviewer-name span{vertical-align:middle}html:not(.msie-8):not(.msie-9) .extrareviewers-dialog td.reviewer-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:250px;display:inline-block;vertical-align:bottom}.extrareviewers-dialog td.reviewer-avatar{padding-right:10px}

@@ -1,0 +1,161 @@
+body {
+    background: #fff;
+}
+.config-page {
+    width: 800px;
+    margin: 0 auto;
+}
+.aui-tabs .tabs-pane h2 {
+    margin-top: 15px;
+}
+.messages-holder {
+    height: 210px;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+.channel-scrollable {
+    height: 260px;
+    overflow-y: scroll;
+}
+.channels-list-table td {
+    vertical-align: middle!important;
+}
+.refrest-btn {
+    position: absolute;
+    top: 65px;
+    right: 45px;
+}
+
+.msg-row {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.msg-img {
+    float: left;
+    margin-right: 7px;
+    width: 40px;
+}
+.msg-img img {
+    height: 40px;
+}
+.msg-body {
+    float: left;
+    width: 86%;
+}
+.msg-date {
+    color: gray;
+}
+.msg-text {
+    margin-top: 6px;
+    word-wrap: break-word;
+}
+
+.filter-select {
+    float: left;
+}
+.filter-link-container {
+    float: left;
+    padding: 5px 0 0 0;
+}
+.filter-link-container a {
+    margin-left: 5px;
+}
+
+#preload {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    display: none;
+}
+#preload span {
+    margin-top: 100px;
+}
+
+.events-link-container {
+    text-align: right;
+}
+
+.form-error-msg {
+    padding: 0 0 0 145px;
+    color: red;
+    margin: 0 0 5px 0;
+}
+
+.select2-container-disabled ul {
+    background-color: #f5f5f5!important;
+}
+
+.optionDropdown{
+    list-style: none;
+    padding: 0;
+    border: 1px solid #8c8c8c;
+    width: 247px;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow: auto;
+    margin: 0;
+    display: none;
+}
+.optionDropdown li{
+    background: white;
+    color: rgb(51, 51, 51);
+    padding: 3px 10px;
+}
+.optionDropdown li:hover{
+    background: #3572b0;
+    cursor: pointer;
+    color: white;
+}
+.js-jql{
+    max-width: 550px!important;
+}
+input.inputSuccessImg{
+    background-image: url(../images/accept.png) !important;
+    background-position: 2px 50% !important;
+    background-repeat: no-repeat !important;
+    padding-left: 22px !important;
+}
+input.inputErrorImg{
+    background-image: url(../images/error.png) !important;
+    background-position: 2px 50% !important;
+    background-repeat: no-repeat !important;
+    padding-left: 22px !important;
+}
+input.inputPreloaderImg{
+    background-image: url(../images/preloader.gif) !important;
+    background-position: 2px 50% !important;
+    background-repeat: no-repeat !important;
+    padding-left: 22px !important;
+}
+.inputIconLink{
+    display: inline-block;
+}
+
+.buttons{
+    min-width: 150px !important;
+}
+.btn{
+    text-shadow: none !important;
+    border: none !important;
+}
+.btn-primary{
+    font-weight: 700 !important;
+    color: #fff !important;
+    background: #0058e1 !important;
+}
+.btn-empty{
+    color: #0058e1 !important;
+    background: #fff !important;
+}
+.btn:hover, .btn[disabled="disabled"]{
+    font-weight: 700 !important;
+    color: #fff !important;
+    background: #0099f2 !important;
+}
+[disabled]{
+    cursor: not-allowed !important;
+}
